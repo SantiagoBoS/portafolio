@@ -1,0 +1,154 @@
+
+
+/* -------------------------------------------- */
+/*             Presentacion Inicial             */
+/* -------------------------------------------- */
+#presentacion{
+    background: #1D1D1D;
+    min-height: 100vh;
+}
+
+
+    .centrarCampos{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mouse-btn {
+        margin: 10px auto;
+        width: 40px;
+        height: 80px;
+        border: 3px solid rgba(122, 122, 124, 0.918);
+        border-radius: 20px;
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+    }
+    
+    .mouse-scroll {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 7px;
+        bottom: 30px;
+        background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+        border-radius: 50%;
+        animation: scrolling13 1s linear infinite;
+    }
+    
+    @keyframes scrolling13 {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(20px);
+        }
+    }
+
+    .scrollText{
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        transform: rotate(90deg);
+        bottom: 75px;
+        left: 30px;
+    }
+
+    .presentacionPrincipal{
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 50px;
+        color: white;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .btn {
+        font-size: 30px;
+        background: transparent;
+        border: solid 2px #ffc506;
+        color: #ffffff;
+        padding: 1rem 3rem;
+        position: relative;
+        transition: .5s ease;
+        font-family: 'Fjalla One', sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .btn::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: #ffc506;
+        transition: .5s ease;
+    }
+    
+    .btn:hover {
+        color: #1e1e2b;
+        transition-delay: .5s;
+    }
+    
+    .btn:hover::before {
+        width: 100%;
+    }
+    
+    .btn::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: #ffc506;
+        transition: .4s ease;
+        z-index: -1;
+    }
+    
+    .btn:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+        color: rgb(255, 255, 255);
+    }
+
+/* -------------------------------------------- */
+/*            Fin Presentación Inicial          */
+/* -------------------------------------------- */
+
+
+/* --------------------------- */
+/*      Triangulo Divisor      */
+/* --------------------------- */
+    .triangulo{
+        background: none repeat scroll 0 0 rgb(60, 0, 255);
+        height: 2px;
+        margin: 0 auto;
+        width: 100%;
+    }
+/* --------------------------- */
+
+
+/* -------------------------------------------- */
+/*                  Portafolio                  */
+/* -------------------------------------------- */
+.portafolioText{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.textCardPortafolio{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+}
