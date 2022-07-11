@@ -1,20 +1,20 @@
 
+.centrarCampos{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* -------------------------------------------- */
 /*             Presentacion Inicial             */
 /* -------------------------------------------- */
-#presentacion{
-    background: #1D1D1D;
-    min-height: 100vh;
-}
 
-
-    .centrarCampos{
-        margin-left: auto;
-        margin-right: auto;
+    #presentacion{
+        min-height: 100vh;
+        background-color: #1e1e2b;
     }
 
-    .mouse-btn {
+    .bordeScroll {
         margin: 10px auto;
         width: 40px;
         height: 80px;
@@ -25,7 +25,7 @@
         left: 20px;
     }
     
-    .mouse-scroll {
+    .circuloScroll {
         display: block;
         width: 20px;
         height: 20px;
@@ -34,10 +34,10 @@
         bottom: 30px;
         background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
         border-radius: 50%;
-        animation: scrolling13 1s linear infinite;
+        animation: animatedScroll 1s linear infinite;
     }
     
-    @keyframes scrolling13 {
+    @keyframes animatedScroll {
         0% {
             opacity: 0;
             transform: translateY(-20px);
@@ -91,16 +91,17 @@
         background-color: #ffc506;
         transition: .5s ease;
     }
-    
+      
     .btn:hover {
         color: #1e1e2b;
         transition-delay: .5s;
+        background-color: #ffc506;
     }
-    
+      
     .btn:hover::before {
         width: 100%;
     }
-    
+      
     .btn::after {
         content: '';
         position: absolute;
@@ -112,8 +113,8 @@
         transition: .4s ease;
         z-index: -1;
     }
-    
-    .btn:hover::after {
+      
+      .btn:hover::after {
         height: 100%;
         transition-delay: 0.4s;
         color: rgb(255, 255, 255);
@@ -128,10 +129,11 @@
 /*      Triangulo Divisor      */
 /* --------------------------- */
     .triangulo{
-        background: none repeat scroll 0 0 rgb(60, 0, 255);
-        height: 2px;
+        background-color: #1e1e2b;
+        height: 100px;
         margin: 0 auto;
         width: 100%;
+        clip-path: polygon(100% 0, 0 0, 50% 50%);
     }
 /* --------------------------- */
 
@@ -139,6 +141,11 @@
 /* -------------------------------------------- */
 /*                  Portafolio                  */
 /* -------------------------------------------- */
+
+#portafolio{
+    background-color: #ffffff;
+}
+
 .portafolioText{
     font-family: 'Fjalla One', sans-serif;
     font-size: 50px;
@@ -150,5 +157,10 @@
 
 .textCardPortafolio{
     font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+img{
+    width: 150px;
 }
