@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -47,7 +47,7 @@
             
             <div class="container centrarCampos">
                 <a href="https://www.linkedin.com/in/santiagoborrerosuarez/" target="_blank">
-                    <button class="btn">
+                    <button class="btnContactame">
                         Contactame
                     </button>
                 </a>
@@ -63,56 +63,174 @@
                 <div class="centrarCampos">
 
                     <div class="col-lg-12 row">
-                        <div class="col-lg-4">
-                            <div class="centrarCampos">
-                                <img src="./src/Reindustrias1.png" alt="">
-                                <img src="./src/Reindustrias2.png" alt="">
-                                <img src="./src/Reindustrias3.png" alt="">
-                                <img src="./src/Reindustrias4.png" alt="">
-                            </div><br>
-                            <div class="textCardPortafolio">REINDUSTRIAS</div>
+
+
+                        <!--         REINDUSTRIAS         -->
+                        <!-- ---------------------------- -->
+                        <div class="col-lg-6">
+                            <div class="text-center card">
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#reindustriasModal">
+                                    <div id="carruselReindustrias" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carruselReindustrias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carruselReindustrias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carruselReindustrias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carruselReindustrias" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./src/Reindustrias1.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias2.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias3.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias4.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselReindustrias" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carruselReindustrias" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                    <div class="separadorImg"></div>
+                                    <br>
+                                    <div class="textCardPortafolio">REINDUSTRIAS</div>
+                                    <br>
+                                </a>
+                            </div>
+                        </div>  
+
+                        <!--      MODAL      -->
+                        <!-- --------------- -->
+                        <div class="modal fade" id="reindustriasModal" tabindex="-1" aria-labelledby="reindustriasModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                <div class="modal-content" style="border-radius: 10px 10px 0px 0px;">
+                                    <!-- <div class="modal-header">
+                                        <h5 class="modal-title" id="reindustriasModalLabel">REINDUSTRIAS</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div> -->
+                                    <div id="carruselReindustriasModal" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./src/Reindustrias1.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias2.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias3.png" class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./src/Reindustrias4.png" class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carruselReindustriasModal" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <img src="" alt="">
-                            <div class="textCardPortafolio">Sistema de Entrevistas CORHUILA</div>
+
+                            
+
+                        <!-- ------------------------------------ -->
+                        <!--         Entrevistas Corhuila         -->
+                        <!-- ------------------------------------ -->
+                        <div class="col-lg-6">
+                            <div class="text-center card">
+                                <div id="carruselEntrevista" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carruselEntrevista" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carruselEntrevista" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carruselEntrevista" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carruselEntrevista" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./src/EntrevistaCorhuila1.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/EntrevistaCorhuila2.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/EntrevistaCorhuila3.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./src/EntrevistaCorhuila4.png" class="d-block w-100" alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselEntrevista" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carruselEntrevista" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <div class="separadorImg"></div>
+                                <br>
+                                <div class="textCardPortafolio">Sistema de Entrevistas CORHUILA</div>
+                                <br>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Autoreporte de Síntomas COVID19</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Reportes COVID19</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Cortina de Inscripciones - Plataforma CORHUILA</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Banner Publicitario CORHUILA</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Registro y/o Calificación de Eventos</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Programas Pregrado de CORHUILA</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Programas Posgrado de CORHUILA</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Reportes de Resultados – Diagnóstico Fortalecimiento de competencias</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Autorización de Permisos CORHUILA</div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <img src="" alt="">
                             <div class="textCardPortafolio">Indicadores Institucionales</div>
                         </div>
