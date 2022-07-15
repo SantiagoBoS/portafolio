@@ -10,7 +10,7 @@
 /* -------------------------------------------- */
 
     #presentacion{
-        min-height: 100vh;
+        min-height: 105vh;
         background-color: #1e1e2b;
     }
 
@@ -78,6 +78,32 @@
         background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
         border-radius: 50%;
         animation: animatedScroll 1s linear infinite;
+    }
+
+    @media screen and (max-width: 425px) and (min-width: 0px) {
+        .scrollText {
+            display: none;
+        }
+    
+        .bordeScroll {
+            display: none;
+        }
+        
+        .circuloScroll {
+            display: none;
+        }
+    
+        .scrollTextRight {
+            display: none;
+        }
+    
+        .bordeScrollRight {
+            display: none;
+        }
+        
+        .circuloScrollRight {
+            display: none;
+        }
     }
     
     @keyframes animatedScroll {
