@@ -1,4 +1,4 @@
 
 <?php
-    require_once("inicio.html")
+    require_once("index.html")
 ?>
