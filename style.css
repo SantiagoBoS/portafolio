@@ -230,16 +230,10 @@
     font-size: 20px;
     text-align: center;
     font-weight: 500;
+    margin: 20px 0 10px 0;
 }
 
-img{
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-    height: 100%;
-    width: 100%;
-}
-
-.card{
+/* .card{
     transition: all .3s;
     border-radius: 10px;
     box-shadow: 0 5px 10px 2px rgba(35, 35, 35, .15);
@@ -252,6 +246,21 @@ img{
     box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
     opacity: 1;
     transition: all .3s;
+} */
+
+.card {
+    transition: all .3s;        
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 2px rgba(35, 35, 35, .15);
+    margin-bottom: 15%;
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .separadorImg{
