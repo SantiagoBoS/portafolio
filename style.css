@@ -209,8 +209,37 @@ a{
     box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
 }
 
-.separadorImg{
-    position: absolute;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+.carousel-control-prev-icon.dark-icons,
+.carousel-control-next-icon.dark-icons {
+    filter: invert(0);
+}
+
+.adaptive-close {
+    width: 1rem;
+    height: 1rem;
+    z-index: 10;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+#modalStacksContainer .badge {
+    font-size: 0.85rem;
+    background-color: #1e1e2b; /* oscuro elegante */
+    color: #fff;
+    transition: transform 0.2s ease, background-color 0.3s;
+}
+
+#modalStacksContainer .badge:hover {
+    transform: scale(1.05);
+    background-color: #3b3b55;
 }
 
 #seccion2{
