@@ -122,12 +122,12 @@ document.addEventListener("DOMContentLoaded", () => {
     col.className = "col-12 col-md-6 col-lg-4 mb-4";
 
     col.innerHTML = `
-      <div class="card text-center border-0 shadow-sm" data-id="${proj.id}">
+      <div class="card text-center" data-id="${proj.id}">
         <div id="carousel-${proj.id}" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             ${proj.images.map((src, i) => `
               <div class="carousel-item ${i === 0 ? 'active' : ''}">
-                <img src="${src}" class="d-block w-100" alt="${proj.title}">
+                <img src="${src}" class="d-block w-100 imgConfigGeneral" alt="${proj.title}">
               </div>
             `).join('')}
           </div>
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     col.querySelector(".card").addEventListener("click", () => {
       modalInner.innerHTML = proj.images.map((src, i) => `
         <div class="carousel-item ${i === 0 ? 'active' : ''}">
-          <img src="${src}" class="d-block w-100" alt="${proj.title}">
+          <img src="${src}" class="d-block w-100 imgConfigGeneral" alt="${proj.title}">
         </div>
       `).join("");
       modal.show();
