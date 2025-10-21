@@ -1,8 +1,21 @@
+.textTitle{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.spacingPage{
+    margin-top: 12%;
+}
+
 /* -------------------------------------------- */
 /*             Presentacion Inicial             */
 /* -------------------------------------------- */
 
-#presentacion {
+#presentation {
     min-height: 100vh;
     background-color: #1e1e2b;
     display: flex;
@@ -162,22 +175,30 @@ a{
     transition: all 1s;
 }
 
+/* ------------------------------------------ */
+/*                  Sobre Mi                  */
+/* ------------------------------------------ */
+
+#aboutMe{
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* ----------------------------------------- */
+/*            habilidades tecnicas           */
+/* ----------------------------------------- */
+
+#technicalSkills{
+    min-height: 100vh;
+    background-color: #1e1e2b;
+}
+
 /* -------------------------------------------- */
 /*                  Portafolio                  */
 /* -------------------------------------------- */
 
 #portafolio{
     background-color: #ffffff;
-}
-
-.portafolioText{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 15%;
-    margin-bottom: 4%;
-    text-align: center;
 }
 
 .textCardPortafolio{
@@ -242,7 +263,21 @@ a{
     background-color: #3b3b55;
 }
 
-#seccion2{
+
+/* ----------------------------------------- */
+/*                Educación                  */
+/* ----------------------------------------- */
+
+#education{
     min-height: 100vh;
     background-color: #1e1e2b;
+}
+
+/* -------------------------------------------- */
+/*                  Contacto                    */
+/* -------------------------------------------- */
+
+#contact{
+    min-height: 100vh;
+    background-color: #ffffff;
 }
